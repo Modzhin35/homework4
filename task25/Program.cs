@@ -10,4 +10,5 @@ int Func(int fNum, int sNum)
 Console.WriteLine("Введите два числа:");
 int firstNum = Convert.ToInt32(Console.ReadLine());
 int secondNum = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"Число {firstNum} в степени {secondNum} = {Func(firstNum, secondNum)}.");
+if (secondNum==0) Console.WriteLine($"Число {firstNum} в степени 0 = 1.");//число в степени ноль = 1.
+else Console.WriteLine($"Число {firstNum} в степени {secondNum} = {Func(firstNum, secondNum)}.");
