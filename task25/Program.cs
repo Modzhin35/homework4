@@ -3,10 +3,7 @@
 int Func(int fNum, int sNum)
 {
     int res = fNum;
-    for (int i = 1; i < Math.Abs(sNum); i++)
-    {
-        res = res * fNum;
-    }
+    for (int i = 1; i < Math.Abs(sNum); i++) res = res * fNum;
     return res;
 }
 
